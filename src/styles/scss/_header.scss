@@ -1,0 +1,23 @@
+.App {
+  .App-logo {
+    height: 4vh;
+    pointer-events: none;
+  }
+
+  .App-header {
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  p.unauth-disclaimer {
+    text-align: center;
+  }
+  .form-buttons {
+    display: flex;
+    .button-container {
+      margin: 0 1rem;
+    }
+  }
+}

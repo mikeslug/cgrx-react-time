@@ -1,0 +1,30 @@
+@import "./_header.scss";
+@import "./_forms.scss";
+@import "./_buttons.scss";
+@import "./_modals.scss";
+@import "./_entry.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: left;
+  padding: 5vh 6.5vw;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.app-body {
+  padding: 3vh 6.5vw;
+}

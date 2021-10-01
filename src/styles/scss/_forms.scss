@@ -1,0 +1,38 @@
+.ui {
+  .form {
+    .formSection {
+      padding: 10px 0;
+    }
+    label {
+      input {
+        float: right;
+      }
+    }
+    .fields {
+      &.time {
+        .field {
+          input {
+            padding: 0.67857143em 0.5em;
+          }
+        }
+      }
+      &.inline {
+        label {
+          width: 25%;
+        }
+        .ui.dropdown,
+        .selection.dropdown {
+          width: 75%;
+        }
+      }
+    }
+    .ui.default.dropdown:not(.button) > .text,
+    .ui.dropdown:not(.button) > .default.text {
+      color: rgb(0, 0, 0) !important;
+    }
+  }
+}
+
+.app-body label {
+  display: block;
+}

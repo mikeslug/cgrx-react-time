@@ -1,0 +1,41 @@
+body a.button,
+body div.button,
+body a.btn,
+body a.btn-secondary,
+body div.btn,
+.ui.basic.button,
+.ui.basic.buttons .button {
+  border: 2px solid #c21e31 !important;
+  background: transparent !important;
+  color: #c21e31 !important;
+  text-transform: uppercase;
+  padding: 1rem 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Libre Franklin", BlinkMacSystemFont, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #c22134 !important;
+    color: #fff !important;
+  }
+}
+
+body button.btn.login,
+body button.btn.logout {
+  border: 2px solid #c21e31 !important;
+  background: #c21e31 !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  padding: 1rem 0.9rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Libre Franklin", BlinkMacSystemFont, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  &:hover {
+    background-color: #fff !important;
+    color: #c21e31 !important;
+  }
+}
