@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cgrx-react-time/static/css/main.4101851f.chunk.css",
+    "main.js": "/cgrx-react-time/static/js/main.f111600b.chunk.js",
+    "main.js.map": "/cgrx-react-time/static/js/main.f111600b.chunk.js.map",
+    "runtime-main.js": "/cgrx-react-time/static/js/runtime-main.5888045a.js",
+    "runtime-main.js.map": "/cgrx-react-time/static/js/runtime-main.5888045a.js.map",
+    "static/css/2.9082872e.chunk.css": "/cgrx-react-time/static/css/2.9082872e.chunk.css",
+    "static/js/2.65b265c4.chunk.js": "/cgrx-react-time/static/js/2.65b265c4.chunk.js",
+    "static/js/2.65b265c4.chunk.js.map": "/cgrx-react-time/static/js/2.65b265c4.chunk.js.map",
+    "index.html": "/cgrx-react-time/index.html",
+    "static/css/2.9082872e.chunk.css.map": "/cgrx-react-time/static/css/2.9082872e.chunk.css.map",
+    "static/css/main.4101851f.chunk.css.map": "/cgrx-react-time/static/css/main.4101851f.chunk.css.map",
+    "static/js/2.65b265c4.chunk.js.LICENSE.txt": "/cgrx-react-time/static/js/2.65b265c4.chunk.js.LICENSE.txt",
+    "static/media/congruex.7ce3f639.svg": "/cgrx-react-time/static/media/congruex.7ce3f639.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5888045a.js",
+    "static/css/2.9082872e.chunk.css",
+    "static/js/2.65b265c4.chunk.js",
+    "static/css/main.4101851f.chunk.css",
+    "static/js/main.f111600b.chunk.js"
+  ]
+}
