@@ -1,19 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
+import DisplayTimer from "./DisplayTimer";
+import EditButton from "./EditButton";
 
 const TimeEntry = (props) => {
-  const count = props.count - 1;
-  const data = props.formData[count];
-  // const data = props.formData;
-  console.log("time entry component props", props);
+  const data = props.formData;
+  const ind = props.index;
+  const timer = data.timerOn;
+  const del = props.handleRemoveItem;
+  const edit = true;
   return (
-    // console.log("time entry data", props.formData),
     <div className="time-entry">
       <div className="entry-wrap">
         <div className="entry-left">
           <div className="entry-field entry-date">{data.date}</div>
           <div className="entry-field entry-pay">
             <div className="entry-field entry-time">
-              {data.hours}:{data.minutes}
+              {!timer ? (
+                <div>
+                  {data.hours}:{data.minutes}
+                </div>
+              ) : (
+                <div>
+                  <DisplayTimer startTime={data.timerAt} />
+                </div>
+              )}
             </div>
             <div className="entry-field entry-pay-type">{data.payType}</div>
           </div>
@@ -21,6 +31,12 @@ const TimeEntry = (props) => {
         <div className="entry-right">
           <div className="entry-field entry-proj">{data.project}</div>
           <div className="entry-field entry-notes">{data.notes}</div>
+        </div>
+        <div className="entry-buttons">
+          <a className="button" date={data.date} onClick={del}>
+            DELETE
+          </a>
+          <EditButton edit={edit} data={data} index={ind} />
         </div>
       </div>
     </div>

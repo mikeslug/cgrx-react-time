@@ -58,17 +58,19 @@ function App() {
   const [formData, updateFormData] = useState([]);
   const [entryCount, updateEntryCount] = useState(0);
   function FormEntry(data) {
-    // updateFormData(data);
     updateEntryCount(entryCount + 1);
     updateFormData((formData) => [...formData, data]);
   }
+  const handleRemoveItem = (e) => {
+    const date = e.target.getAttribute("date");
+    updateFormData(formData.filter((item) => item.date !== date));
+  };
   return (
     <div className="App">
       <PageLayout>
         <AuthenticatedTemplate>
           <ProfileContent />
           <Spacer />
-
           <div className="form-buttons">
             <EntryButton handleEntry={FormEntry} />
             <QuantityButton />
@@ -78,12 +80,15 @@ function App() {
           <p className="unauth-disclaimer">Please sign in.</p>
         </UnauthenticatedTemplate>
         <div className="entries-wrap">
-          {
-            // formData &&
-            [...Array(entryCount)].map((_, i) => (
-              <TimeEntry key={i} count={entryCount} formData={formData} />
-            ))
-          }
+          {formData.map((form, index) => (
+            <TimeEntry
+              key={index}
+              index={index}
+              count={entryCount}
+              formData={form}
+              handleRemoveItem={handleRemoveItem}
+            />
+          ))}
         </div>
       </PageLayout>
     </div>

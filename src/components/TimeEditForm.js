@@ -1,21 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Dropdown } from "semantic-ui-react";
 import Timer from "./Timer";
 
-const TimeEntryFormComponent = ({ handleClose, handleEntry }) => {
-  const initialState = {
-    project: "",
-    payType: "",
-    date: "",
-    hours: "",
-    minutes: "",
-    notes: "",
-    timerAt: 0,
-    timerOn: false,
-  };
-
-  const [formData, updateFormData] = useState(initialState);
+const TimeEditFormComponent = ({ editData, handleClose, handleEntry }) => {
+  const [formData, updateFormData] = useState([]);
   const [formSubmitted, updateFormSubmitted] = useState("false");
+
+  //   useEffect(() => {
+  //     updateFormData(editData);
+  //   }, [editData]);
 
   const handleChange = (e) => {
     updateFormData({
@@ -33,7 +26,7 @@ const TimeEntryFormComponent = ({ handleClose, handleEntry }) => {
 
   const clearState = () => {
     setTimeout(() => {
-      updateFormData({ ...initialState });
+      updateFormData([]);
       updateFormSubmitted(false);
     }, 500);
   };
@@ -217,4 +210,4 @@ const TimeEntryFormComponent = ({ handleClose, handleEntry }) => {
   );
 };
 
-export default TimeEntryFormComponent;
+export default TimeEditFormComponent;

@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import Modal from "./Modal.js";
-import TimeEntryFormComponent from "./TimeEntryForm.js";
+import TimeEditFormComponent from "./TimeEditForm.js";
 
-class EntryButton extends Component {
+class EditButton extends Component {
   constructor() {
     super();
     this.state = {
       form: false,
-      edit: false,
     };
     this.showForm = this.showForm.bind(this);
     this.hideForm = this.hideForm.bind(this);
@@ -25,13 +24,13 @@ class EntryButton extends Component {
     return (
       <div className="button-container">
         <a className="button" onClick={() => this.showForm()}>
-          Enter Time
+          Edit Entry
         </a>
         <Modal form={this.state.form} handleClose={this.hideForm}>
-          <TimeEntryFormComponent
+          <TimeEditFormComponent
             handleClose={this.hideForm}
             handleEntry={this.props.handleEntry}
-            data={this.props.data}
+            editData={this.props.data}
             index={this.props.index}
           />
         </Modal>
@@ -40,4 +39,4 @@ class EntryButton extends Component {
   }
 }
 
-export default EntryButton;
+export default EditButton;
