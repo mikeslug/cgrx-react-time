@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cgrx-react-time/static/css/main.4101851f.chunk.css",
-    "main.js": "/cgrx-react-time/static/js/main.f111600b.chunk.js",
-    "main.js.map": "/cgrx-react-time/static/js/main.f111600b.chunk.js.map",
+    "main.js": "/cgrx-react-time/static/js/main.f10b0aee.chunk.js",
+    "main.js.map": "/cgrx-react-time/static/js/main.f10b0aee.chunk.js.map",
     "runtime-main.js": "/cgrx-react-time/static/js/runtime-main.5888045a.js",
     "runtime-main.js.map": "/cgrx-react-time/static/js/runtime-main.5888045a.js.map",
     "static/css/2.9082872e.chunk.css": "/cgrx-react-time/static/css/2.9082872e.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.9082872e.chunk.css",
     "static/js/2.65b265c4.chunk.js",
     "static/css/main.4101851f.chunk.css",
-    "static/js/main.f111600b.chunk.js"
+    "static/js/main.f10b0aee.chunk.js"
   ]
 }
