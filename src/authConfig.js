@@ -3,7 +3,7 @@ export const msalConfig = {
     clientId: "f775fc69-3b9b-4680-9431-806dfecca948",
     authority:
       "https://login.microsoftonline.com/743127a4-099a-45da-9160-47b014d740b9",
-    redirectUri: "http://localhost:3000",
+    redirectUri: "https://mikeslug.github.io/cgrx-react-time/",
   },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored
